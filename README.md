@@ -17,12 +17,12 @@ Creer une application de gestion des commandes et ceux en utilisant des concepts
 
 ### I. BACKEND
 
-1. Definition de l'architecture de project pour le backend
-2. Definition de la structure des tests backend et ecriture des premiers tests
-3. Implementation du CQRS avec le design pattern Mediator
-4. Ajout du mapper pour la conversion des donnees en DTOs avec AutoMapper
-5. Ecriture d'une feature de test
-6. Gestion des erreures
+1. Definition de l'architecture de project pour le backend ✅
+2. Definition de la structure des tests backend et ecriture des premiers tests ✅
+3. Implementation du CQRS avec le design pattern Mediator ✅
+4. Ajout du mapper pour la conversion des donnees en DTOs avec AutoMapper ✅
+5. Ecriture d'une feature de test ✅
+6. Gestion des erreures 🕜
 
     - Definir la structure d'une erreure
     - Utilisation d'un builder pour la contruction d'une erreure

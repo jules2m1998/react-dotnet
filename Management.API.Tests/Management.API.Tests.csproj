@@ -15,4 +15,16 @@
     <PackageReference Include="FluentAssertions" Version="6.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Comparers\" />
+    <Folder Include="Contexts\" />
+    <Folder Include="Drivers\" />
+    <Folder Include="Features\" />
+    <Folder Include="Hooks\" />
+    <Folder Include="Implementations\" />
+    <Folder Include="Retrievers\" />
+    <Folder Include="StepDefinitions\" />
+    <Folder Include="Support\" />
+  </ItemGroup>
+
 </Project>
