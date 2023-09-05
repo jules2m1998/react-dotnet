@@ -1,4 +1,4 @@
-using Management.API.Configs;
+using Management.Api.Configs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Custom
-builder.Services
+builder
+    .Services
     .ConfigureMediatR()
     .ConfigureAutoMapper();
 
@@ -24,6 +24,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+// Custom
+app.UseHttpExceptionHandler();
 
 app.UseAuthorization();
 

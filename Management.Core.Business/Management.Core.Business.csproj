@@ -8,12 +8,17 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Management.Core.Domain\Management.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

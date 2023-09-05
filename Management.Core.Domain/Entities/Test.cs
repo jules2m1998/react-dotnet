@@ -8,9 +8,10 @@ namespace Management.Core.Domain.Entities;
 
 public class Test
 {
-    public int Id { get; set; }
     public string Name { get; set; }
+    public int Id { get; set; }
     public string Description { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public DateTime UpdatedDate { get; set;}
+    public DateTime CreatedDate { get; set; } = DateTime.Now;
+    public int Status { get; set; }
+    public DateTime UpdatedDate { get; set;} = DateTime.Now;
 }
