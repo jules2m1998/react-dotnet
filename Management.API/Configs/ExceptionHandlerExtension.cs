@@ -15,7 +15,7 @@ public static class ExceptionHandlerExtension
 
 
         var helper = new ResponseWritterHelper();
-        @this.UseMiddleware(typeof(HandleExceptionMiddleware), mapper, helper);
+        @this.UseMiddleware<HandleExceptionMiddleware>(mapper, helper);
         return @this;
     }
 }

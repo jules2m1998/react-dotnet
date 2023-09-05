@@ -1,4 +1,5 @@
-﻿using Management.Core.Business.UseCases.TestUCs;
+﻿using Management.Api.Responses;
+using Management.Core.Business.UseCases.TestUCs;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +16,9 @@ public class TestsController : ControllerBase
     {
         this.sender = sender;
     }
+
     [HttpGet]
+    [ProducesResponseType(typeof(ErrorResponses), 404)]
     public async Task<IActionResult> Addition(int a, int b)
     {
         var query = new MakeTest.Query(a, b);

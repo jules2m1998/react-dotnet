@@ -7,6 +7,11 @@ public class ResponseWritterHelper : IResponseWritterHelper
 {
     public async Task WriteAsync(HttpResponse response, ErrorResponses error)
     {
-        await response.WriteAsync(JsonSerializer.Serialize(error));
+        var serializeOptions = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true
+        };
+        await response.WriteAsync(JsonSerializer.Serialize(error, serializeOptions));
     }
 }
