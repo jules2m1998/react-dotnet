@@ -19,15 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{0E68F214
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5C53E721-EC62-4E9D-B285-83A92C3C4D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Core.Domain", "Management.Core.Domain\Management.Core.Domain.csproj", "{6B5557FA-180F-42A5-954B-1B1E10A8E8B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Core.Domain", "Management.Core.Domain\Management.Core.Domain.csproj", "{6B5557FA-180F-42A5-954B-1B1E10A8E8B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Core.Business", "Management.Core.Business\Management.Core.Business.csproj", "{80A41382-A7CD-40C3-A627-F0286F435A14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Core.Business", "Management.Core.Business\Management.Core.Business.csproj", "{80A41382-A7CD-40C3-A627-F0286F435A14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Infra.Data", "Management.Infra.Data\Management.Infra.Data.csproj", "{611B1BC3-81E5-4A4F-AD9D-F8218709B269}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Infra.Data", "Management.Infra.Data\Management.Infra.Data.csproj", "{611B1BC3-81E5-4A4F-AD9D-F8218709B269}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Api", "Management.Api\Management.Api.csproj", "{8AD25318-1050-4999-9C19-3A5526CFF904}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Api", "Management.Api\Management.Api.csproj", "{8AD25318-1050-4999-9C19-3A5526CFF904}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Api.Tests", "Management.Api.Tests\Management.Api.Tests.csproj", "{020339BD-AF56-42F2-9EC7-4CB51630BE0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Api.Tests", "Management.Api.Tests\Management.Api.Tests.csproj", "{020339BD-AF56-42F2-9EC7-4CB51630BE0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Core.Business.Tests", "Management.Core.Business.Tests\Management.Core.Business.Tests.csproj", "{237AC16E-6EC5-4D3E-BE6A-C8E7361460BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Unit.Api", "Management.Unit.Api\Management.Unit.Api.csproj", "{AF72BFEE-4EC5-4FA6-AE5B-2CEA216F0D29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,14 @@ Global
 		{020339BD-AF56-42F2-9EC7-4CB51630BE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{020339BD-AF56-42F2-9EC7-4CB51630BE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{020339BD-AF56-42F2-9EC7-4CB51630BE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{237AC16E-6EC5-4D3E-BE6A-C8E7361460BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{237AC16E-6EC5-4D3E-BE6A-C8E7361460BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{237AC16E-6EC5-4D3E-BE6A-C8E7361460BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{237AC16E-6EC5-4D3E-BE6A-C8E7361460BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF72BFEE-4EC5-4FA6-AE5B-2CEA216F0D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF72BFEE-4EC5-4FA6-AE5B-2CEA216F0D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF72BFEE-4EC5-4FA6-AE5B-2CEA216F0D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF72BFEE-4EC5-4FA6-AE5B-2CEA216F0D29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +83,8 @@ Global
 		{611B1BC3-81E5-4A4F-AD9D-F8218709B269} = {FC578036-84AC-4EED-92F9-8ACB72319963}
 		{8AD25318-1050-4999-9C19-3A5526CFF904} = {E47D7D4E-4227-4A47-A8FC-B3D34F6A4B28}
 		{020339BD-AF56-42F2-9EC7-4CB51630BE0C} = {5C53E721-EC62-4E9D-B285-83A92C3C4D94}
+		{237AC16E-6EC5-4D3E-BE6A-C8E7361460BE} = {39B8453F-3D0D-4609-987F-15717FE98A4B}
+		{AF72BFEE-4EC5-4FA6-AE5B-2CEA216F0D29} = {5C53E721-EC62-4E9D-B285-83A92C3C4D94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2C3AAB25-CD78-49A9-9DB6-76932A177739}

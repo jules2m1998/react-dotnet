@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Management.Core.Business.DTOs;
+using Management.Core.Business.DTOs.Test;
 using Management.Core.Domain.Entities;
 using Management.Core.Domain.Exceptions;
 using MediatR;
@@ -33,7 +33,6 @@ public static class MakeTest
                 Status = request.A + request.B,
             };
             var result = mapper.Map<TestDto>(test);
-            throw new NotFoundException("Test not found");
             return Task.FromResult(result);
         }
     }

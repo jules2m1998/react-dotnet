@@ -5,7 +5,7 @@ namespace Management.Api.Helpers;
 
 public class ResponseWritterHelper : IResponseWritterHelper
 {
-    public async Task WriteAsync(HttpResponse response, ErrorResponses error)
+    public async Task WriteAsync(Microsoft.AspNetCore.Http.HttpResponse response, ErrorResponses error)
     {
         var serializeOptions = new JsonSerializerOptions
         {

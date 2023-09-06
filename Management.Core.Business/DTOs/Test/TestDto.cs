@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Management.Core.Business.DTOs;
+namespace Management.Core.Business.DTOs.Test;
 
 public class TestDto
 {

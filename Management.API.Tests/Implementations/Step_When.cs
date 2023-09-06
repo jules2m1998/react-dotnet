@@ -26,15 +26,15 @@ public class Step_When
 
     private void Initialisation<TException>(TException exception) where TException : BaseException
     {
-        var response = new Mock<HttpResponse>();
+        var response = new Mock<Microsoft.AspNetCore.Http.HttpResponse>();
         response
             .SetupSet(x => x.StatusCode = It.IsAny<int>())
             .Callback<int>(value => context.StatusCode = value);
 
         var helper = new Mock<IResponseWritterHelper>();
         helper
-            .Setup(x => x.WriteAsync(It.IsAny<HttpResponse>(), It.IsAny<ErrorResponses>()))
-            .Callback<HttpResponse, ErrorResponses>((re, err) =>
+            .Setup(x => x.WriteAsync(It.IsAny<Microsoft.AspNetCore.Http.HttpResponse>(), It.IsAny<ErrorResponses>()))
+            .Callback<Microsoft.AspNetCore.Http.HttpResponse, ErrorResponses>((re, err) =>
             {
                 context.ErrorResponse = err;
             })

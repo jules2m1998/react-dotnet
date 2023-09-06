@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Management.Core.Business.DTOs;
+using Management.Core.Business.DTOs.Test;
 using Management.Core.Domain.Entities;
 
 namespace Management.Core.Business.Mappers;

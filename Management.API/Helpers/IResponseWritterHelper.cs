@@ -4,5 +4,5 @@ namespace Management.Api.Helpers;
 
 public interface IResponseWritterHelper
 {
-    Task WriteAsync(HttpResponse response, ErrorResponses error);
+    Task WriteAsync(Microsoft.AspNetCore.Http.HttpResponse response, ErrorResponses error);
 }
