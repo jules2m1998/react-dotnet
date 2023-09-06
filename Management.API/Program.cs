@@ -12,7 +12,8 @@ builder.Services.AddSwaggerGen();
 builder
     .Services
     .ConfigureMediatR()
-    .ConfigureAutoMapper();
+    .ConfigureAutoMapper()
+    .AddCompression();
 
 var app = builder.Build();
 
@@ -24,8 +25,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 // Custom
 app.UseHttpExceptionHandler();
+app.EnableStaticFiles();
 
 app.UseAuthorization();
 
