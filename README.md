@@ -32,8 +32,8 @@ Creer une application de gestion des commandes et ceux en utilisant des concepts
 
 ### FRONTEND🕜
 
-1. Defintion de l'architecture de projet pour le front🕜
-2. Implementation des tests unitaires et e2e
+1. Defintion de l'architecture de projet pour le front✅
+2. Implementation des tests unitaires et e2e🕜
 3. Gestion des requetes http et de erreures http
 4. Ajout du store
 5. Authorization avec routing
